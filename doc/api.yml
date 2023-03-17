@@ -923,6 +923,14 @@ components:
     Student:
       allOf:
         - $ref: '#/components/schemas/User'
+      properties:
+        gps:   
+          type: object
+          properties:
+            latitude:
+              type: string
+            longitude:
+              type: string  
     Teacher:
       allOf:
         - $ref: '#/components/schemas/User'
